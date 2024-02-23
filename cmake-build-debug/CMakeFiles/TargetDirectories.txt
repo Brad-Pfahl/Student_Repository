@@ -1,0 +1,3 @@
+C:/Users/bpfah/C++ Projects/studentRepository/cmake-build-debug/CMakeFiles/C___Projects.dir
+C:/Users/bpfah/C++ Projects/studentRepository/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bpfah/C++ Projects/studentRepository/cmake-build-debug/CMakeFiles/rebuild_cache.dir
