@@ -88,28 +88,12 @@ void Roster::remove(const std::string& studentID) {
     }
 }
 
-// Print all students in the roster
 void Roster::printAll() {
-    Student::printHeader();
+    Student::printHeader();  // Print the header once at the beginning
+
     for (int i = 0; i <= Roster::lastIndex; i++) {
-        if (classRosterArray[i] != nullptr) {
-            std::cout << classRosterArray[i]->getStudentID();
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getFirstName();
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getLastName();
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getEmailAddress();
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getAge();
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getDaysToComplete()[0];
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getDaysToComplete()[1];
-            std::cout << '\t';
-            std::cout << classRosterArray[i]->getDaysToComplete()[2];
-            std::cout << '\t';
-            std::cout << degreeProgramStrings[classRosterArray[i]->getDegreeProgram()] << std::endl;
+        if (classRosterArray[i] != nullptr) {  // Ensure the student object exists before trying to print
+            classRosterArray[i]->print();  // Call the print() method of the Student class
         }
     }
 }
