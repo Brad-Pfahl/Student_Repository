@@ -6,9 +6,6 @@
 
 int main() {
 
-    // Print course title, programming language, student ID, and name
-    std::cout << "Course Title: Scripting and Programming - Applications - C867\nProgramming Language: C++\nStudent ID: 011070820\nName: Brad Pfahl\n";
-
     // Add students to roster
     const string studentData[] = {
             "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
